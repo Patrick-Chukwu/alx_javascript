@@ -1,3 +1,9 @@
+#!/usr/bin/node
+
+/**
+ * nested function
+ */
+
 let globalVariable = "Welcome";
 
 function outer() {
@@ -6,14 +12,16 @@ function outer() {
 
     function inner() {
 
-        alert(globalVariable + course);
+        alert(globalVariable + " " + course);
         exclamation = "!";
 
         function inception() {
-            alert(globalVariable + course + exclamation);
+            alert(globalVariable + " " + course + " " + exclamation);
         }
         inception();
     }
     inner();
 
 }
+
+outer();
