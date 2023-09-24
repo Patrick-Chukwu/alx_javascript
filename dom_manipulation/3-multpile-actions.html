@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creating and Removing Elements</title>
+</head>
+<body>
+  <div id="container"></div>
+
+  <script>
+    //get the container
+    let getContainer = document.getElementById("container");
+    //create a paragraph Element
+    let paragraph = document.createElement("p");
+    //create the content of the prargaph element
+    paragraph.textContent = "New paragraph";
+
+    //add the paragraph to the DOM
+    getContainer.appendChild(paragraph);
+
+
+//create button element
+    let button = document.createElement("button");
+
+    //create content of button
+    button.textContent = "button";
+    button.setAttribute("id", "myButton");
+    button.style.display = "block";
+    getContainer.appendChild(button);
+
+    // select the button by its id
+    let toggler = document.getElementById("myButton");
+
+    // add event listener
+    toggler.addEventListener("click", function(){
+
+        if (paragraph.style.display === "block") {
+            paragraph.style.display = "none";
+        } else {
+            paragraph.style.display = "block";
+        }
+
+    });
+  </script>
+</body>
+</html>
