@@ -1,3 +1,5 @@
-function callMeMoby(x, theFunction) {
+#!/usr/bin/node
+
+exports.callMeMoby = function(x, theFunction) {
     return x * theFunction;
 }
