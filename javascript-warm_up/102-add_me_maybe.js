@@ -1,3 +1,11 @@
-function AddMeMaybe(number, theFunction) {
-    return number + theFunction;
+#!/usr/bin/node
+
+
+exports.addMeMaybe = function(number, theFunction) {
+    number += 1;
+    theFunction(number);
+
+
 }
+
+
