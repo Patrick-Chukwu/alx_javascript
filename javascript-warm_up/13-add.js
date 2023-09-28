@@ -1,3 +1,4 @@
-add = function add(a, b) {
+let add = function(a, b) {
     return a + b;
 }
+
